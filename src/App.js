@@ -5,6 +5,7 @@ import UseRef from "./components/useRef";
 import UseImperative from "./components/useImperative";
 import UseContext from "./components/useContext";
 import UseMemo from "./components/useMemo";
+import UseCallback from "./components/useCallback";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <UseImperative/>
       <UseContext/>
       <UseMemo/>
+      <UseCallback/>
     </div>
   );
 }

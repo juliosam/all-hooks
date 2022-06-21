@@ -8,8 +8,10 @@ const UseContext = () => {
   const [username, setUsername] = useState("");
     return ( 
       <AppContext.Provider value={{username, setUsername}}>
+        <p style={{color: 'blue'}}>useContext</p>
         <Login />  
         <User />
+        <hr/>
       </AppContext.Provider>
     );
 } 

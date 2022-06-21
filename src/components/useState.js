@@ -8,10 +8,12 @@ const UseState = () => {
 
   return ( 
     <div className="use-state">
+      <p style={{color: 'blue'}}>useState</p>
       <h1>Homie!</h1>
       <p>{state}</p>
       <button onClick={handleClick}>+</button><br/>
       <input onChange={spanFiller}/>{inputValue}
+      <hr/>
     </div>
    );
 }

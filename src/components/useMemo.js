@@ -27,9 +27,11 @@ const UseMemo = () => {
 
   return ( 
     <div>
+      <p style={{color: 'blue'}}>useMemo</p>
       <h1>{getLongestName}</h1>
       <button onClick={()=>{setToggle(!toggle)}}>{""}Toggle</button>
       {toggle && <h1>toggle</h1>}
+      <hr/>
     </div>
    );
 }

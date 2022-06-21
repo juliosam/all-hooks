@@ -13,6 +13,7 @@ import { useReducer } from "react";
     const[state, dispatch] = useReducer(reducer, {count:0, showText:true}) 
   return (                                                                                                                                               
     <div className="use-reducer">
+      <p style={{color: 'blue'}}>useReducer</p>
       <h1>{state.count}</h1>
       <button
       onClick={()=>{
@@ -21,7 +22,8 @@ import { useReducer } from "react";
       }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          }
       >Click here
       </button>
-      {state.showText && <p>This is a text</p>}  
+      {state.showText && <p>This is a text</p>} 
+      <hr/> 
     </div>
    );
 }

@@ -5,10 +5,12 @@ const UseImperative = () => {
     const ref = useRef(null)
   return ( 
     <div>
+      <p style={{color: 'blue'}}>useImperative</p>
       <button
       onClick={()=>{ref.current.alterToggle()}}
       >Button From Parent</button>
       <Button ref={ref}/>   
+      <hr/>
     </div>
    );
 }

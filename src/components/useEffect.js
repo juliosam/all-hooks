@@ -12,7 +12,10 @@ const UseEffect = () => {
   }
   useEffect(()=>{getter()},[])
     return ( 
-        <div>{data}</div>
+        <div>
+          <p style={{color: 'blue'}}>useEffect</p>
+          {data}
+        <hr/></div>
      );
 }
 export default UseEffect;
